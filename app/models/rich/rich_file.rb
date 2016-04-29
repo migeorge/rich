@@ -8,5 +8,7 @@ module Rich
     scope :files,   -> { where("rich_rich_files.simplified_type = 'file'") }
 
     paginates_per Rich.options[:paginates_per]
+
+    attr_accessible :simplified_type
   end
 end

@@ -1,5 +1,4 @@
 if (Object.const_defined?("Formtastic") && Gem.loaded_specs["formtastic"].version.version[0,1].to_i > 1)
-
   class RichInput < ::Formtastic::Inputs::TextInput
     def to_html
 
@@ -18,6 +17,4 @@ if (Object.const_defined?("Formtastic") && Gem.loaded_specs["formtastic"].versio
       end
     end
   end
-
 end
-
